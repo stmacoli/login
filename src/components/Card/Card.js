@@ -1,9 +1,10 @@
 const Card = ({ name }) => {
+    console.log("name: ", name)
     return (
         <div className="card" style={{width: "18rem"}}>
                 {/*<img src="" className="card-img-top" alt="..." />*/}
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
+                    {name ? <h1 className="card-title">{name}</h1> : <h1>não tem nome</h1>}
                 </div>
             </div>
     )
