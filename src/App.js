@@ -1,10 +1,10 @@
 import './App.css';
-import CardList from "./CardList/CardList";
+import CardList from "./components/CardList/CardList";
 
 function App() {
   return (
     <div className="App">
-      <CardList />     
+      <CardList cards={[]} />
     </div>
   );
 }
